@@ -229,7 +229,7 @@ def create_corrected_firmware(input_files, output_file, threshold, margin, verbo
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Corrects firmware dumps by finding the most common byte at each position from multiple source files.",
-        epilog="Example: python firmware_voter.py -i --margin 0.5 -o corrected.bin dump*.bin"
+        epilog="Example: python bin-voter.py -i --margin 0.5 -o corrected.bin dump*.bin"
     )
     
     parser.add_argument('input_files', nargs='+', help='One or more input .bin firmware files to process.')
